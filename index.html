@@ -1,12 +1,45 @@
-<html>
-  <head>
-    <title>
-    MY RESUME
-    </title>
-  </head>
-  <body>
-    <h1 align="center">DAMMA BALAGANESH</h1>
-  <h2 align="center">balaganesh.damma@sasi.ac.in</h2>
-    <h3 align="left">83747xxx45</h3>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Streaming Word Count</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Streaming Word Count </h1>
+
+  <div class="controls">
+    <label>Top-N:
+      <select id="topN">
+        <option value="3">3</option>
+        <option value="5" selected>5</option>
+        <option value="10">10</option>
+      </select>
+    </label>
+    <label>Min token length:
+      <input type="number" id="minLen" value="1" min="1"/>
+    </label>
+    <label>
+      <input type="checkbox" id="useStopwords"> Remove stopwords
+    </label>
+    <button id="clearBtn">Clear</button>
+  </div>
+
+  <div>
+    <input id="lineInput" type="text" placeholder="Type a line and press Enter"/>
+    <textarea id="bulk" placeholder="Paste multiple lines..."></textarea><br>
+    <button id="ingestBulk">Ingest pasted lines</button>
+  </div>
+
+  <h3>Stats</h3>
+  <p>Unique words: <span id="uniqueCount">0</span> | Total tokens: <span id="totalCount">0</span></p>
+
+  <table>
+  <thead><tr><th>#</th><th id="topNHeader">Top-N Words</th><th>Count</th></tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
 </html>

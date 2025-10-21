@@ -1,0 +1,30 @@
+body { font-family: Arial, sans-serif; background: url('https://image.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_16441291.jpg') no-repeat center center fixed; background-size: cover; background-color: #04283d; color: #ffffff; padding: 20px; min-height: 100vh; margin: 0; }
+h1 { color: #ffffff; }
+.controls { margin-bottom: 15px; }
+input, textarea, select, button {
+  margin: 5px 0; padding: 8px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.12); background: rgba(15,42,58,0.6); color: #ffffff; outline: none;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+input::placeholder, textarea::placeholder {
+  color: rgba(232,245,255,0.6);
+}
+input:focus, textarea:focus, select:focus, button:focus {
+  border-color: rgba(79,140,255,0.9);
+  box-shadow: 0 0 0 3px rgba(79,140,255,0.08);
+}
+textarea { width: 100%; height: 120px; }
+#lineInput, #bulk {
+  background: rgba(255,255,255,0.08); color: #ffffff; border: 1px solid rgba(255,255,255,0.14);
+}
+#lineInput::placeholder, #bulk::placeholder { color: rgba(255,255,255,0.7); }
+#lineInput:focus, #bulk:focus {
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(79,140,255,0.12);
+  border-color: rgba(79,140,255,0.9);
+}
+button { cursor: pointer; background: rgba(79,140,255,0.12); border: 1px solid rgba(79,140,255,0.3); }
+button:hover { background: rgba(79,140,255,0.18); }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { padding: 8px; border: 1px solid rgba(255,255,255,0.06); text-align: left; }
+th { background: rgba(0,0,0,0.5); color: #ffffff; }
